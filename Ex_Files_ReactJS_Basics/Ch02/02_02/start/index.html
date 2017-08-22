@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://fb.me/react-15.2.1.js"></script>
-        <script src="https://fb.me/react-dom-15.2.1.js"></script>
-        <title>My First React File</title>
-    </head>
-    <body>
-        <div id='react-container'></div>
-        <script>
-            ReactDOM.render(
-                React.createElement('div', null, 'Hello World'),
-                document.getElementById('react-container'))
-        </script>
 
-    </body>
+<head>
+    <script src="https://fb.me/react-15.2.1.js"></script>
+    <script src="https://fb.me/react-dom-15.2.1.js"></script>
+    <title>My First React File</title>
+</head>
+
+<body>
+    <div id='react-container'></div>
+    <script>
+        // ReactDOM.render(
+        //     React.createElement('ul', null,
+        //         React.createElement('li', null, 'item 01'),
+        //         React.createElement('li', null, 'item 02'),
+        //         React.createElement('li', null, 'item 03'),
+        //         React.createElement('li', null, 'item 04'),
+        //         React.createElement('li', null, 'item 05'),
+        //     ),
+        //     document.getElementById('react-container'))
+
+        ReactDOM.render(
+            React.createElement( <
+                ul >
+                <
+                li > Item 001 < /li> <
+                li > Item 002 < /li> <
+                li > Item 003 < /li> <
+                li > Item 004 < /li> <
+                li > Item 005 < /li> <
+                li > Item 006 < /li> <
+                /ul>
+            ),
+            document.getElementById('react-container'))
+    </script>
+
+</body>
+
 </html>
